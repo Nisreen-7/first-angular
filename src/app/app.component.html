@@ -2,3 +2,10 @@
 
 <p>Hello {{name}}</p>
 <button (click)="changeName()">Click </button>
+
+<button (click)="toggleDisplay()">Toggle</button>
+<div *ngIf="display">
+  <p>Some text</p>
+</div>
+
+<app-boucle> </app-boucle>

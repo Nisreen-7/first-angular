@@ -10,5 +10,12 @@ export class AppComponent {
   changeName() {
     this.name = 'Louna';
   }
+  display = false;
+  toggleDisplay() {
+
+    this.display = !this.display;
+
+  }
 
 }
+
