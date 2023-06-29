@@ -12,8 +12,6 @@ Dans le template, rajouter une div avec un paragraphe dedans, et mettre un ngIf 
 Rajouter un bouton qui va déclencher le toggle au click
 
 ## Faire une  boucle dans le BoucleComponent
-
-
 	
 Dans le component boucle, déclarer une nouvelle propriété list dans laquelle on va mettre un tableau de strings
 	
@@ -24,3 +22,14 @@ Rajouter une méthode addItem dans le component qui va attendre un argument de t
 Dans le template, créer un bouton qui au click va appeler la méthode addItem en lui mettant "quelque chose" en argument
 	
 Faire un deuxième bouton qui appellera la même méthode mais avec une autre valeur en argument, et pourquoi pas un troisième bouton
+
+
+## Faire un component compteur
+
+Générer un nouveau component CounterComponent avec le ng g c
+	
+Dans ce composant, rajouter une propriété count, une méthode increment et une decrement
+	
+Dans le template, afficher le count et un bouton + et un - qui lanceront les méthodes associées
+	
+Dans le BoucleComponent, faire en sorte d'afficher un CounterComponent à côté de chaque élément du for
