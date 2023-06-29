@@ -33,3 +33,19 @@ Dans ce composant, rajouter une propriété count, une méthode increment et une
 Dans le template, afficher le count et un bouton + et un - qui lanceront les méthodes associées
 	
 Dans le BoucleComponent, faire en sorte d'afficher un CounterComponent à côté de chaque élément du for
+
+
+## Calculette pour récupérer des valeurs d'input
+
+Créer un nouveau component CalculComponent
+	
+Dans le ts ajouter 2 propriétés a et b de type number
+	
+Créer une méthode result qui va faire un return de a+b
+	
+Dans le template, créer 2 inputs type number, et les assigner aux propriétéd a et b avec un ngModel
+	
+À côté des inputs, faire appel à la méthode result à l'intérieur de {{}}
+
+
+##
