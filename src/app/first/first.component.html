@@ -1,0 +1,13 @@
+<h1>First</h1>
+<p>Hello {{name}}</p>
+<button (click)="changeName()">Click</button>
+<button (click)="toggleDisplay()">Toggle</button>
+
+<div *ngIf="display">
+  <p>Some text</p>
+</div>
+
+<div>
+  {{message}}
+  <input type="text" [(ngModel)]="message">
+</div>

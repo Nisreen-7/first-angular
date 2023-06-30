@@ -1,2 +1,6 @@
 <h1>calcul works!</h1>
+
+ <!-- Ici on appel la fonction result directement dans le template, vu qu'elle ne fait pas grand chose
+c'est pas très gênant mais c'est quelque chose à éviter car elle cette fonction sera relancée trop
+souvent par angular -->
 <input type="number" [(ngModel)]="a"> + <input type="number" [(ngModel)]="b"> = {{result()}}

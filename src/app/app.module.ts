@@ -6,17 +6,25 @@ import { BoucleComponent } from './boucle/boucle.component';
 import { CounterComponent } from './counter/counter.component';
 import { FormsModule } from '@angular/forms';
 import { CalculComponent } from './calcul/calcul.component';
+import { AppRoutingModule } from './app-routing.module';
+import { FirstComponent } from './first/first.component';
+import { RoomItemComponent } from './room-item/room-item.component';
+import { RoomListComponent } from './room-list/room-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BoucleComponent,
     CounterComponent,
-    CalculComponent
+    CalculComponent,
+    FirstComponent,
+    RoomItemComponent,
+    RoomListComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

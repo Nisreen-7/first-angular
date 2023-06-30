@@ -7,19 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  name = 'Nisreen';
-  changeName() {
-    this.name = 'Louna';
-  }
-
-  display = false;
-  toggleDisplay() {
-
-    this.display = !this.display;
-
-  }
-
-  message = '';
 
 }
 

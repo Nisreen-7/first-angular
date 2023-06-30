@@ -1,0 +1,21 @@
+<h1>Rooms</h1>
+
+<main>
+    <app-room-item [room]="item" *ngFor="let item of list" />
+</main>
+<div class="container">
+<form (ngSubmit)="addRoom()">
+
+  <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" [(ngModel)]="newRoom.name">
+  </div>
+  <div>
+      <label for="surface">Surface</label>
+      <input type="number" name="surface" [(ngModel)]="newRoom.surface">
+  </div>
+
+  <button> Add</button>
+
+</form>
+</div>
