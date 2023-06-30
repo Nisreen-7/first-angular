@@ -1,11 +1,22 @@
 <h1>First</h1>
 
 <p>Hello {{name}}</p>
-<button (click)="changeName()">Click </button>
+<button (click)="changeName()" type="button">Click </button>
 
 <button (click)="toggleDisplay()">Toggle</button>
 <div *ngIf="display">
   <p>Some text</p>
 </div>
 
-<app-boucle> </app-boucle>
+
+<div>
+  <h3>test input</h3>
+  {{message}}
+  <input type="text" [(ngModel)]="message">
+</div>
+
+
+<app-boucle></app-boucle>
+
+<app-counter></app-counter>
+<app-calcul></app-calcul>

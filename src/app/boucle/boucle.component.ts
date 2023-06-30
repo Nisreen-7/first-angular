@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./boucle.component.css']
 })
 export class BoucleComponent {
-
+  list = ['Nisreen', 'Louna', 'Ali'];
+  addItem(text: string) {
+    this.list.push(text);
+  }
 }

@@ -1,1 +1,11 @@
-<p>boucle works!</p>
+<h2>Boucle component</h2>
+<button (click)="addItem('Bloup')">Bloup</button>
+<button (click)="addItem('Blip')">Blip</button>
+<button (click)="addItem('blop')">blop</button>
+<p>List length : {{list.length}}</p>
+<ul>
+  <li *ngFor="let item of list">
+    {{item}}
+    <app-counter></app-counter>
+  </li>
+</ul>
