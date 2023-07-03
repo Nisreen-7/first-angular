@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FirstComponent } from './first/first.component';
 import { RoomItemComponent } from './room-item/room-item.component';
 import { RoomListComponent } from './room-list/room-list.component';
+import { RoomFormComponent } from './room-form/room-form.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RoomListComponent } from './room-list/room-list.component';
     CalculComponent,
     FirstComponent,
     RoomItemComponent,
-    RoomListComponent
+    RoomListComponent,
+    RoomFormComponent
   ],
   imports: [
     BrowserModule,

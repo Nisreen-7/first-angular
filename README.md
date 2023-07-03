@@ -50,7 +50,7 @@ Faire en sorte que si la room est ouverte, on affiche son nom en vert, sinon on 
 --nous creeons un itemComponent (son) de listComponent(father)
 
 
-##Style et ouverture/fermeture de la salle
+## Style et ouverture/fermeture de la salle
 
 
 	
@@ -62,10 +62,20 @@ Dans le css du room list, faire en sorte d'afficher les rooms sous forme de flex
 
 Formulaire room
 
-
-	
 Dans le room-list component, rajouter une propriété newRoom avec une Room dedans avec des valeurs par défaut
 	
 Créer un formulaire et liés les champs de la newRoom à des inputs
 	
 Créer une méthode addRoom qui va push newRoom dans l'array et faire en sorte de l'appeler au submit du formulaire
+
+## Supprimer une room via un ouput
+
+Dans le room-item rajouter une button à l'intérieur de l'article et lui mettre un event au click
+	
+Dans le ts du room-item, ajouter un nouvel output delete qui va être un event emitter avec une Room à l'intérieur
+	
+Créer une méthode buttonClick dans le ts du room-item toujours, et dans cette méthode, faire en sorte de déclencher l'output delete, en lui mettant la room en valeur (on assigne ensuite le buttonClick à notre button dans le template)
+	
+Côté room-list, dans le ts, on crée une méthode deleteRoom(room:Room) et dans cette méthode on va faire le code suivant : this.list = this.list.filter(item => item != room);
+	
+Assigner le deleteRoom au (delete) de notre app-room-item

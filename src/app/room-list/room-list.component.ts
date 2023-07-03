@@ -33,9 +33,11 @@ export class RoomListComponent {
     opened: false,
   }];
 
-  newRoom:Room = {id: 0, name: '', opened: false, surface: 0};
+  addRoom(room: Room) {
+    this.list.push(room);
+  }
 
-  addRoom() {
-    this.list.push({...this.newRoom});
+  deleteRoom(room: Room) {
+    this.list = this.list.filter(item => item != room);
   }
 }
